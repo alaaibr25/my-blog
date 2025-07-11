@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 
 year = dt.now().year
-blog_url = "https://api.npoint.io/c790b4d5cab58020d391"
+blog_url = "https://api.npoint.io/"
 response_blog = requests.get(blog_url).json()
 posts_list = []
 for post in response_blog:
